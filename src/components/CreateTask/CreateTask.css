@@ -1,0 +1,45 @@
+.add-task {
+    padding: 48px 24px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.add-task h2 {
+    font-family: 'Manus';
+    text-align: center;
+    font-size: 2rem;
+}
+
+.add-task input {
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+.add-task button {
+    margin-top: 2em;
+    width: 40%;
+    padding: 1rem 0;
+    border-radius: 10px;
+    background-color: #2596be;
+    font-size: 1em;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.add-task button:hover {
+    transition: 0.3s;
+    background-color: #be4d25;
+}
+
+.task-photo {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 60%;
+}

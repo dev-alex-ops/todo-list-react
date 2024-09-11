@@ -1,0 +1,33 @@
+.main-title {
+    text-align: center;
+    margin: 0;
+    padding: 16px;
+}
+
+.main-title h1 {
+    font-family: "Manus";
+    font-size: 3rem;
+    margin: 0;
+}
+
+.main-title h3 {
+    font-family: "Aptos";
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.main-title span {
+    font-size: 2rem;
+    font-family: "AptosBold";
+}
+
+.completed {
+    -webkit-text-stroke: 1px black;
+    color: #2596be;
+}
+
+.total {
+    -webkit-text-stroke: 1px black;
+    color: #be4d25;
+}

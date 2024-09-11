@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Aptos";
+  src: local("Aptos"),url("./fonts/Aptos/Aptos.ttf") format("truetype");
+}
+@font-face {
+  font-family: "AptosBold";
+  src: local("AptosBold"),url("./fonts/Aptos/Aptos-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "AptosItalic";
+  src: local("AptosItalic"),url("./fonts/Aptos/Aptos-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Manus";
+  src: local("Manus"),url("./fonts/breathney/Breathney-Demo.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: "Aptos";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-image: url(./assets/task-photo.jpeg);
+  filter: blur(10px);
+  -webkit-filter: blur(10px); */
+}

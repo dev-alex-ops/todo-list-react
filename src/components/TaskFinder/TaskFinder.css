@@ -1,0 +1,26 @@
+.finder {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.finder h4 {
+    font-size: 20px;
+}
+
+.finder input {
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.search-bar:focus {
+    outline-color: black;
+}
+
+.no-tasks {
+    display: none;
+}

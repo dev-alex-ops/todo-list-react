@@ -1,0 +1,52 @@
+.bg-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url(./assets/task-photo.jpeg);
+  filter: blur(50px);
+  -webkit-filter: blur(50px);
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-wrapper {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* Centrar verticalmente */
+  height: 90vh; /* Ocupa toda la altura de la pantalla */
+  gap: 35px;
+  z-index: 2; /* Asegurar que esté encima del fondo */
+  position: relative; /* Posicionamiento relativo para mantenerlo encima del bg-wrapper */
+  margin: 0 auto; /* Centrar horizontalmente */
+  padding: 0 10%; /* Ajustar el padding para control de espacios laterales */
+}
+
+.task-wrapper {
+  width: 40%;
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px grey;
+}
+
+.list-wrapper {
+  height: 80vh; /* Mantener la altura general del contenedor */
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px grey;
+  padding: 10px; /* Agregar padding para separar el contenido de los bordes */
+  overflow: hidden; /* Evita overflow inesperado en general */
+  display: flex;
+  flex-direction: column; /* Asegura que el contenido se apile verticalmente */
+}
+
+
+
+.hide-completed {
+  margin-top: 20px;
+  text-align: center;
+}
