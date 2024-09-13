@@ -1,0 +1,35 @@
+.icon {
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.icon-check {
+    color: #2596be;
+    transition: 0.3s;
+}
+
+.icon-check:hover {
+    color: #be4d25;
+    transition: 0.3s;
+}
+
+.icon-completed {
+    color: #be4d25;
+    transition: 0.3s;
+}
+
+.icon-completed:hover {
+    color: #2596be;
+    transition: 0.3s;
+}
+
+.icon-delete {
+    color: black;
+    transition: 0.3s;
+}
+
+.icon-delete:hover {
+    color: red;
+    transition: 0.3s;
+}

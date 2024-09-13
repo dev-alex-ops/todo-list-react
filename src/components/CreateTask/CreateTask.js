@@ -18,7 +18,7 @@ function CreateTask({ onCreate }) {
     return (
         <>
             <div className='add-task'>
-                <h2>Create  new Task</h2>
+                <h2>Create &nbsp; new Task</h2>
                 <form onSubmit={handleSubmit}>
                     <input 
                         type='text'

@@ -1,24 +1,21 @@
 import './TaskItem.css';
+import { CompleteIcon } from '../CompleteIcon/CompleteIcon';
+import { DeleteIcon } from '../DeleteIcon/DeleteIcon';
 
 function TaskItem(props) {
   return (
     <li>
-      <div>
-        <span 
-          className={`icon icon-check ${props.completed && "icon-check-active"}`}
-          onClick={props.onComplete}
-        >
-          V
-        </span>
+      <div className='item-container'>
+        <CompleteIcon 
+          completed={props.completed}
+          onComplete={props.onComplete}
+        />
       </div>
-      <p className={`task-item ${props.completed && "task-item-complete"}`}>{props.text}</p>
+        <p className={`task-item ${props.completed && "task-item-complete"}`}>{props.text}</p>
       <div>
-        <span 
-          className='icon icon-delete'
-          onClick={props.onDelete}
-        >
-          X
-        </span>
+        <DeleteIcon 
+          onDelete={props.onDelete}
+        />
       </div>
     </li>
     );
