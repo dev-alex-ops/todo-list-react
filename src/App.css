@@ -44,9 +44,27 @@
   flex-direction: column; /* Asegura que el contenido se apile verticalmente */
 }
 
-
-
 .hide-completed {
   margin-top: 20px;
   text-align: center;
+}
+
+
+@media only screen and (max-width: 870px) {
+  .main-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+    height: 100%;
+  }
+
+  .task-wrapper {
+    width: 90%;
+  }
+
+  .list-wrapper {
+    width: 93%;
+    min-height: 30vh;
+    max-height: 60vh;
+  }
 }

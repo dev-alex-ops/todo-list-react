@@ -6,7 +6,7 @@
 }
 
 .add-task h2 {
-    font-family: 'Manus';
+    font-family: 'Dancing Script';
     text-align: center;
     font-size: 2rem;
 }
@@ -35,11 +35,12 @@
     background-color: #be4d25;
 }
 
-.task-photo {
-    display: flex;
-    justify-content: center;
+.task-form {
+    padding-top: 0 !important;
 }
 
-img {
-    width: 60%;
+.calendar {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
 }

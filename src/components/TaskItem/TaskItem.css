@@ -10,8 +10,12 @@ li div {
     text-align: center;
 }
 
+.task-info {
+    text-align: left;
+    width: 60%;
+}
+
 li p {
-    align-self: center;
     width: 60%;
     padding-left: 1em;
 }

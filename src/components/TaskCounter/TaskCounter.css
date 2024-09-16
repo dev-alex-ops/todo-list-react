@@ -5,13 +5,12 @@
 }
 
 .main-title h1 {
-    font-family: "Manus";
+    font-family: "Dancing Script";
     font-size: 3rem;
     margin: 0;
 }
 
 .main-title h3 {
-    font-family: "Aptos";
     font-weight: bold;
     font-size: 1.5rem;
     margin-top: 10px;
@@ -20,7 +19,6 @@
 
 .main-title span {
     font-size: 2rem;
-    font-family: "AptosBold";
 }
 
 .completed {

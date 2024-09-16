@@ -11,7 +11,9 @@ function TaskItem(props) {
           onComplete={props.onComplete}
         />
       </div>
+      <div className='task-info'>
         <p className={`task-item ${props.completed && "task-item-complete"}`}>{props.text}</p>
+      </div>
       <div>
         <DeleteIcon 
           onDelete={props.onDelete}

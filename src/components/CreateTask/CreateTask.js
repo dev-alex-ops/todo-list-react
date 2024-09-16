@@ -1,25 +1,32 @@
 import './CreateTask.css';
-import photo from '../../assets/task2.png';
+import '../Calendar/Calendar.css';
 import React, { useState } from 'react';
+import { TaskCalendar } from '../Calendar/Calendar';
 
-function CreateTask({ onCreate }) {
+// Crea la funcion CreateTask llamando al prop onCreate que le manda App
+function CreateTask({ onCreate, selectedDate, setSelectedDate }) {
+    // Crea un estado de React para controlar la entrada
     const [taskText, setTaskText] = useState('');
 
+    // Función para observar los cambios del input
     const handleInputChange = (event) => {
         setTaskText(event.target.value);
     };
 
+    // Función para lanzar la creación de la tarea. prevenDefault evita que se recargue la página al lanzar el formulario. Set task text actualiza a
+    // vacío de nuevo el campo input tras la creación de la tarea
     const handleSubmit = (event) => {
         event.preventDefault();
         onCreate(taskText);
         setTaskText('');
     };
     
+    // Render de HTML llamando a las funciones en cuestión
     return (
         <>
             <div className='add-task'>
-                <h2>Create &nbsp; new Task</h2>
-                <form onSubmit={handleSubmit}>
+                <h2>Create new Task</h2>
+                <form className= "task-form" onSubmit={handleSubmit}>
                     <input 
                         type='text'
                         placeholder="Add task"
@@ -31,8 +38,11 @@ function CreateTask({ onCreate }) {
                     >Create</button>
                 </form>
             </div>    
-            <div className='task-photo'>
-                <img src={photo} alt="productivity"/>
+            <div className='calendar'>
+                <TaskCalendar 
+                    selectedDate={selectedDate} 
+                    setSelectedDate={setSelectedDate}
+                />
             </div>
         </>
     );

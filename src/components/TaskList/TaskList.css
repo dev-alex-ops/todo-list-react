@@ -1,7 +1,8 @@
 ul {
-    max-height: 30vh; /* Ajusta según el espacio disponible para evitar overflow */
-    overflow-y: auto; /* Activa el scroll vertical */
-    margin: 0;
-    padding: 0;
-    list-style: none; /* Elimina los puntos de las listas si es necesario */
+  min-height: 30vh;  
+  max-height: 30vh; /* Ajusta según el espacio disponible para evitar overflow */
+  overflow-y: auto; /* Activa el scroll vertical */
+  margin: 0;
+  padding: 0;
+  list-style: none; /* Elimina los puntos de las listas si es necesario */
   }

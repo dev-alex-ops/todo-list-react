@@ -1,24 +1,8 @@
-@font-face {
-  font-family: "Aptos";
-  src: local("Aptos"),url("./fonts/Aptos/Aptos.ttf") format("truetype");
-}
-@font-face {
-  font-family: "AptosBold";
-  src: local("AptosBold"),url("./fonts/Aptos/Aptos-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "AptosItalic";
-  src: local("AptosItalic"),url("./fonts/Aptos/Aptos-Italic.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Manus";
-  src: local("Manus"),url("./fonts/breathney/Breathney-Demo.ttf") format("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
   margin: 0;
-  font-family: "Aptos";
+  font-family: "Roboto";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-image: url(./assets/task-photo.jpeg);

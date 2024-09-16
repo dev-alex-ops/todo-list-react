@@ -8,7 +8,10 @@ This is a basic app built with React to explore this framework and test its capa
 Create a fully interactive and error-proof ToDo app. Simple as that—no crazy features, just the ability to add, complete, and delete tasks. (Done!)
 
 ### Second Sprint:
-Focus on making the app aesthetically pleasing and responsive (WIP 16-09-24).
+Focus on making the app aesthetically pleasing and responsive (Done! -- Responsive is working on horizontal mode smartphones)
+
+### Third Sprint:
+Adding a calendar and displaying tasks depending on the selected date (WIP 16-Sep-24)
 
 ---
 
