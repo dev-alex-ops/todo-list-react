@@ -20,12 +20,20 @@ function CreateTask({ onCreate, selectedDate, setSelectedDate }) {
         onCreate(taskText);
         setTaskText('');
     };
+
+    const formatedDate = (selectedDate) => {
+        const day = String(selectedDate.getDate()).padStart(2, '0');
+        const month = String(selectedDate.getMonth() + 1).padStart(2, '0'); // Los meses son 0-indexados
+        const year = selectedDate.getFullYear();
+        return `${day}/${month}/${year}`;
+    };
     
     // Render de HTML llamando a las funciones en cuestión
     return (
         <>
             <div className='add-task'>
-                <h2>Create new Task</h2>
+                <h2>Create new Task <br/>
+                {formatedDate(selectedDate)}</h2>
                 <form className= "task-form" onSubmit={handleSubmit}>
                     <input 
                         type='text'

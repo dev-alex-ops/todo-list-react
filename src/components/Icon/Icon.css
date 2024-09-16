@@ -6,7 +6,7 @@
 
 .icon-check {
     color: #2596be;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .icon-check:hover {
@@ -16,7 +16,8 @@
 
 .icon-completed {
     color: #be4d25;
-    transition: 0.3s;
+    transform: scale(0);
+    transition: transform 0.3s ease;
 }
 
 .icon-completed:hover {
