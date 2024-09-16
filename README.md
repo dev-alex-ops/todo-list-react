@@ -11,7 +11,10 @@ Create a fully interactive and error-proof ToDo app. Simple as that—no crazy f
 Focus on making the app aesthetically pleasing and responsive (Done! -- Responsive is working on horizontal mode smartphones)
 
 ### Third Sprint:
-Adding a calendar and displaying tasks depending on the selected date (WIP 16-Sep-24)
+Adding a calendar and displaying tasks depending on the selected date (Done!)
+
+### Fourth Sprint:
+Adding some extra features like show all the tasks on the month, mark on calendar the days with tasks and some more fancy stuff! (TBD)
 
 ---
 
