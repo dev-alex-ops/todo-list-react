@@ -1,6 +1,5 @@
-ul {
-  min-height: 30vh;  
-  max-height: 30vh; /* Ajusta según el espacio disponible para evitar overflow */
+ul { 
+  max-height: 17.5em; /* Ajusta según el espacio disponible para evitar overflow */
   overflow-y: auto; /* Activa el scroll vertical */
   margin: 0;
   padding: 0;

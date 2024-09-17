@@ -10,14 +10,14 @@ function TaskItem(props) {
           completed={props.completed}
           onComplete={props.onComplete}
         />
-      </div>
-      <div className='task-info'>
-        <p className={`task-item ${props.completed && "task-item-complete"}`}>{props.text}</p>
-      </div>
-      <div>
-        <DeleteIcon 
-          onDelete={props.onDelete}
-        />
+        <div className='task-info'>
+          <p className={`task-item ${props.completed && "task-item-complete"}`}>{props.text}</p>
+        </div>
+        <div>
+          <DeleteIcon 
+            onDelete={props.onDelete}
+          />
+        </div>
       </div>
     </li>
     );

@@ -1,23 +1,26 @@
 li {
     height: 3.5em;
-    display: flex;
-    flex-direction: row;
+    padding: 10px 0;
 }
 
-li div {
-    width: 15%;
-    align-content: center;
-    text-align: center;
+.item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .task-info {
     text-align: left;
     width: 60%;
+    align-content: center;
+    text-align: center;
 }
 
 .task-info p {
-    width: 40%;
-    padding-left: 1em;
+    min-height: 18px;
+    width: 90%;
+    margin: 0
 }
 
 .icon {
@@ -58,11 +61,6 @@ li div {
 
 .task-item {
     font-size: 16px;
-    transition: 0.3s;
-}
-
-.task-item:hover {
-    font-size: 18px;
     transition: 0.3s;
 }
 

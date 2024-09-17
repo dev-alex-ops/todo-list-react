@@ -28,7 +28,7 @@ function TaskCalendar({ tasks, selectedDate, setSelectedDate}) {
   const dates = tasks.map(item => item.date);
 
   return (
-    <div>
+    <div className='calendar-wrapper'>
       <h3 className='month-tasks'>This Month's Tasks: {monthlyTasks.length}</h3>
       <Calendar 
         onChange={handleDateChange} 

@@ -1,7 +1,10 @@
 .icon {
+    display: flex;
+    align-items: center;
     cursor: pointer;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 400;
+    margin: 10px;
 }
 
 .icon-check {
@@ -16,8 +19,8 @@
 
 .icon-completed {
     color: #be4d25;
-    transform: scale(0);
-    transition: transform 0.3s ease;
+    transform: scale(1);
+    transition: all 0.3s ease;
 }
 
 .icon-completed:hover {
