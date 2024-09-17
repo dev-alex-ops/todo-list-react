@@ -1,4 +1,5 @@
 .react-calendar {
+    height: 20em;
 
     width: 350px;
   
@@ -285,3 +286,12 @@
   
   }
   
+  .highlight {
+    font-weight: 999;
+    font-style: italic;
+ }
+
+ .month-tasks {
+  text-align: center;
+  margin-top: 0;
+ }

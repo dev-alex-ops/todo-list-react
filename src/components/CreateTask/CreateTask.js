@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { TaskCalendar } from '../Calendar/Calendar';
 
 // Crea la funcion CreateTask llamando al prop onCreate que le manda App
-function CreateTask({ onCreate, selectedDate, setSelectedDate }) {
+function CreateTask({ tasks, onCreate, selectedDate, setSelectedDate }) {
     // Crea un estado de React para controlar la entrada
     const [taskText, setTaskText] = useState('');
 
@@ -47,7 +47,8 @@ function CreateTask({ onCreate, selectedDate, setSelectedDate }) {
                 </form>
             </div>    
             <div className='calendar'>
-                <TaskCalendar 
+                <TaskCalendar
+                    tasks = {tasks}
                     selectedDate={selectedDate} 
                     setSelectedDate={setSelectedDate}
                 />

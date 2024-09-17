@@ -14,13 +14,11 @@ Focus on making the app aesthetically pleasing and responsive (Done! -- Responsi
 Adding a calendar and displaying tasks depending on the selected date (Done!)
 
 ### Fourth Sprint:
-Adding some extra features like show all the tasks on the month, mark on calendar the days with tasks and some more fancy stuff! (TBD)
+Adding some extra features like show all the tasks on the month, mark on calendar the days with tasks and some more fancy stuff! (Done!)
 
 ---
 
 ## Upcoming features to add:
-
-- Add a calendar feature and assign a date to each task, so you can navigate through it and display specific tasks based on the selected day.
 
 - Build a user and task database, and develop a backend. (I'll be using NestJS, Express, Sequelize and PostgreSQL for that)
 

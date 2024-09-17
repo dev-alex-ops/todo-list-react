@@ -60,16 +60,13 @@ function App() {
 
   // Función para crear tareas
   const createTask = (text) => {
-    console.log('Entra:', text)
     const duplicatedTask = (text) => {
       return todayList.find((item) => item.text.toLocaleLowerCase() === text.toLocaleLowerCase())
     }
-    console.log('Sale del duplicated:', duplicatedTask(text))
     if (text.trim() !== ''){
       if (!duplicatedTask(text)) {
         const newTasks = [ ...tasks, {text: text, date: formatedDate(date), completed: false}];
         setTask(newTasks);
-        console.log(newTasks);
       }
     }
   }
@@ -91,6 +88,7 @@ function App() {
       <div className='main-wrapper'>
         <div className='task-wrapper'>
           <CreateTask
+            tasks = {tasks}
             onCreate = {createTask}
             selectedDate = {date}
             setSelectedDate = {setDate} 
