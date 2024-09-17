@@ -6,7 +6,7 @@ import { TaskList } from './components/TaskList/TaskList';
 import { TaskItem } from './components/TaskItem/TaskItem';
 import { CreateTask } from './components/CreateTask/CreateTask';
 import { DisableCompleted } from './components/DisableCompleted/DisableCompleted';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function App() {
   // Función para establecer una fecha
@@ -21,8 +21,16 @@ function App() {
 
 
   // Declaración de los estados de React para observar las tareas y el campo de búsqueda
-  const [tasks, setTask] = React.useState([]);
+  const [tasks, setTask] = React.useState(() => {
+    const data = localStorage.getItem("tasks");
+    const initialData = JSON.parse(data);
+    return initialData || [];
+  });
   const [searchValue, setSearchValue] = React.useState('');
+
+  useEffect (() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks))
+  })
 
   // Filtro para mostrar únicamente las tareas de un día específico
   const todayList = tasks.filter(
@@ -52,10 +60,12 @@ function App() {
   const completeTask = (text) => {
     const newTasks = [ ...tasks ];
     const taskIndex = newTasks.findIndex(
-      (item) => item.text === text
+      (item) => item.text === text && item.date === formatedDate(date)
     )
-    newTasks[taskIndex].completed = !newTasks[taskIndex].completed;
-    setTask(newTasks);
+    if (taskIndex !== -1) {
+      newTasks[taskIndex].completed = !newTasks[taskIndex].completed;
+      setTask(newTasks);
+    }
   };
 
   // Función para crear tareas
