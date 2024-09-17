@@ -1,6 +1,6 @@
 import './TaskItem.css';
-import { CompleteIcon } from '../CompleteIcon/CompleteIcon';
-import { DeleteIcon } from '../DeleteIcon/DeleteIcon';
+import { CompleteIcon } from '../Icon/CompleteIcon';
+import { DeleteIcon } from '../Icon/DeleteIcon';
 
 function TaskItem(props) {
   return (

@@ -1,7 +1,7 @@
 import './CreateTask.css';
 import '../Calendar/Calendar.css';
 import React, { useState } from 'react';
-import { TaskCalendar } from '../Calendar/Calendar';
+import { TaskCalendar } from '../Calendar';
 
 // Crea la funcion CreateTask llamando al prop onCreate que le manda App
 function CreateTask({ tasks, onCreate, selectedDate, setSelectedDate }) {

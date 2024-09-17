@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-image: url(./assets/task-photo.jpeg);
+  background-image: url(../assets/task-photo.jpeg);
   filter: blur(50px);
   -webkit-filter: blur(50px);
   height: 100vh;
