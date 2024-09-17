@@ -5,7 +5,4 @@ body {
   font-family: "Roboto";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: url(./assets/task-photo.jpeg);
-  filter: blur(10px);
-  -webkit-filter: blur(10px); */
 }

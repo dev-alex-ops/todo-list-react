@@ -15,8 +15,8 @@ li div {
     width: 60%;
 }
 
-li p {
-    width: 90%;
+.task-info p {
+    width: 40%;
     padding-left: 1em;
 }
 
