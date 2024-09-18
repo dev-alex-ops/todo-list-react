@@ -1,9 +1,11 @@
 import React from "react";
+import './App.css';
 import { TaskCounter } from '../components/TaskCounter';
 import { TaskFinder } from '../components/TaskFinder';
 import { TaskList } from '../components/TaskList';
 import { TaskItem } from '../components/TaskItem';
 import { CreateTask } from '../components/CreateTask';
+import { TaskCalendar } from '../components/Calendar';
 
 function AppUI({
     tasks,
@@ -23,12 +25,18 @@ function AppUI({
         <div className='bg-wrapper'></div>
         <div className='main-wrapper'>
             <div className='task-wrapper'>
-            <CreateTask
-                tasks = {tasks}
-                onCreate = {createTask}
-                selectedDate = {date}
-                setSelectedDate = {setDate} 
-            />
+                <CreateTask
+                    tasks = {tasks}
+                    onCreate = {createTask}
+                    selectedDate = {date}
+                    setSelectedDate = {setDate} 
+                />
+                <TaskCalendar
+                    className = 'calendar'
+                    tasks = {tasks}
+                    selectedDate={date} 
+                    setSelectedDate={setDate}
+                />
             </div>
             
             <div className='list-wrapper'>
