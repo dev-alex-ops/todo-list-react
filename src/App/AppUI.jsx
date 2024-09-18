@@ -18,7 +18,9 @@ function AppUI({
     setSearchValue,
     filteredList,
     completeTask,
-    deleteTask
+    deleteTask,
+    loading,
+    error,
 }) {
     return (
         <>
@@ -52,6 +54,9 @@ function AppUI({
             />
 
             <TaskList>
+                {loading && <h3>Loading...</h3>}
+                {error && <h3>We got some troubles...</h3>}
+
                 {filteredList
                 .sort ((a, b) => {
                     if (a.completed === b.completed) {
