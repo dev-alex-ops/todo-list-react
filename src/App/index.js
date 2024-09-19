@@ -7,7 +7,12 @@ import '../index.css';
 
 function App() {
   // Declaración de los estados de React para observar las tareas y el campo de búsqueda
-  const [tasks, setTasks] = useLocalStorage('tasks', []);
+  const {
+    data: tasks, 
+    saveData: setTasks,
+    loading,
+    error
+  } = useLocalStorage('tasks', []);
   const [searchValue, setSearchValue] = React.useState('');
   // Función para establecer una fecha
   const [date, setDate] = React.useState(new Date());
@@ -92,6 +97,8 @@ function App() {
       filteredList={filteredList}
       completeTask={completeTask}
       deleteTask={deleteTask}
+      loading={loading}
+      error={error}
     />
     
   );
