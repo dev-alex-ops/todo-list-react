@@ -1,0 +1,31 @@
+pipeline {
+    agent (label 'workerNode')
+    stages {
+        stage ('Check image') {
+            steps {
+                sh 'docker images'
+            }
+        }
+
+        stage ('Deploy image') {
+            steps {
+                sh 'docker run -d --name todolist -p 3000:3000 todolist-app:1'
+            }
+        }
+
+        post {
+            always {
+                node ('workerNode') {
+                    cleanWs(cleanWhenNotBuilt: true,
+                    cleanWhenAborted: true,
+                    cleanWhenFailure: true,
+                    deleteDirs: true,
+                    disableDeferredWipeout: true,
+                    notFailBuild: true,
+                    patterns: [[pattern: '**/*', type: 'INCLUDE'],
+                            [pattern: '.propsfile', type: 'EXCLUDE']])
+                }
+            }
+        }
+    }
+}

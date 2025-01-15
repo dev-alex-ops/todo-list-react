@@ -1,0 +1,31 @@
+pipeline {
+    agent (label 'workerNode')
+    stages {
+        stage ('Get code') {
+            steps {
+                git 'https://github.com/dev-alex-ops/todo-list-react'
+            }
+        }
+
+        stage ('Build Docker image') {
+            steps {
+                sh 'docker build -t todolist-app:1 .'
+            }
+        }
+
+        post {
+            always {
+                node ('workerNode') {
+                    cleanWs(cleanWhenNotBuilt: true,
+                    cleanWhenAborted: true,
+                    cleanWhenFailure: true,
+                    deleteDirs: true,
+                    disableDeferredWipeout: true,
+                    notFailBuild: true,
+                    patterns: [[pattern: '**/*', type: 'INCLUDE'],
+                            [pattern: '.propsfile', type: 'EXCLUDE']])
+                }
+            }
+        }
+    }
+}
