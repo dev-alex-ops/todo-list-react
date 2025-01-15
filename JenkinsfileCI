@@ -12,20 +12,5 @@ pipeline {
                 sh 'docker build -t todolist-app:1 .'
             }
         }
-
-        post {
-            always {
-                node ('workerNode') {
-                    cleanWs(cleanWhenNotBuilt: true,
-                    cleanWhenAborted: true,
-                    cleanWhenFailure: true,
-                    deleteDirs: true,
-                    disableDeferredWipeout: true,
-                    notFailBuild: true,
-                    patterns: [[pattern: '**/*', type: 'INCLUDE'],
-                            [pattern: '.propsfile', type: 'EXCLUDE']])
-                }
-            }
-        }
     }
 }
