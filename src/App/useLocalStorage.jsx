@@ -25,7 +25,7 @@ function useLocalStorage(dataType, initialValue) {
         setError(true);
       }
     }, 2000);
-  }, [dataType, initialValue]);
+  }, []);
   
   
   const saveData = (newData) => {
