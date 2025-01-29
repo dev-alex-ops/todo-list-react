@@ -20,6 +20,7 @@
 }
 
 .add-task button {
+    margin: 0 auto;
     margin-top: 2em;
     width: 40%;
     padding: 1rem 0;
